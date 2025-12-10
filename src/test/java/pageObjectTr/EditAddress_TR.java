@@ -39,7 +39,7 @@ public class EditAddress_TR {
 	@FindBy(xpath="//span[contains(text(),'Saved Addresses')]")
 	WebElement savedAddress;
 	
-	/*@FindBy(xpath="//input[@id='firstName']")
+	@FindBy(xpath="//input[@id='firstName']")
 	WebElement txtFname;
 	
 	@FindBy(xpath="//input[@id='lastName']")
@@ -57,7 +57,7 @@ public class EditAddress_TR {
 	@FindBy(xpath="//input[@id='zipCode']")
 	WebElement txtCode;
 	
-	*/
+	/*
 	
 	@FindBy(xpath = "//div[contains(@class,'app_ModalpopoutBottom')]//input[@id='firstName']")
 	WebElement txtFname;
@@ -77,6 +77,7 @@ public class EditAddress_TR {
 	@FindBy(xpath = "//div[contains(@class,'app_ModalpopoutBottom')]//input[@id='zipCode']")
 	WebElement txtCode;
 
+*/
 	
 	@FindBy(xpath="//button[normalize-space()='Save address']")
 	WebElement btnSave;

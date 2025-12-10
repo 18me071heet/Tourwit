@@ -7,7 +7,6 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -62,7 +61,7 @@ public class DataProviderLogIn_Tr extends BaseClassTr {
 		
 		 */
          
-		 By profileIcon = By.xpath("//img[@alt='Profile']");
+		By profileIcon = By.xpath("//img[@alt='Profile']");
 		 
 	    try {
 		       
@@ -74,6 +73,7 @@ public class DataProviderLogIn_Tr extends BaseClassTr {
 			    }
 			 
 			 else 
+				 
 			 {
 				
 				 threadTime();
@@ -83,7 +83,7 @@ public class DataProviderLogIn_Tr extends BaseClassTr {
 			 }
 		    
 		    } catch (TimeoutException e) {
-		        logger.warn("Profile icon not found → Checking for toast error...");
+		        logger.error("Profile icon not found → Checking for toast error...");
 		    }
 		   
 
@@ -104,7 +104,6 @@ public class DataProviderLogIn_Tr extends BaseClassTr {
 		};
 		
 		return data;
-		
 		
 	}
 

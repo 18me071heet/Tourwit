@@ -1,43 +1,26 @@
-17:30:20.263 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-01 --> Verify User email is filled 
-17:30:23.652 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-02 --> Verify User password is filled
-17:30:26.840 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-03 --> Verify User is able to login with valid email and password
-17:30:53.600 [main] WARN  tc_Tr.DataProviderLogIn_Tr - Profile icon not found → Checking for toast error...
-17:33:05.203 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+11:21:24.233 [main] INFO  tc_Tr.EditAddress_Tr - TC-11 --> Verify User is able to change first name
+17:45:32.869 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\INX\OneDrive\Documents\My Automation Learning\TourWitDemo\testng.xml
 
-17:33:05.593 [main] INFO  tc_Tr.DataProviderLogIn_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
-17:33:09.467 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-01 --> Verify User email is filled 
-17:33:13.116 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-02 --> Verify User password is filled
-17:33:16.527 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-03 --> Verify User is able to login with valid email and password
-17:33:43.257 [main] WARN  tc_Tr.DataProviderLogIn_Tr - Profile icon not found → Checking for toast error...
-17:33:43.283 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-01 --> Verify User email is filled 
-17:33:46.591 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-02 --> Verify User password is filled
-17:33:49.848 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-03 --> Verify User is able to login with valid email and password
-17:34:16.583 [main] WARN  tc_Tr.DataProviderLogIn_Tr - Profile icon not found → Checking for toast error...
-17:34:16.593 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-01 --> Verify User email is filled 
-17:34:19.847 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-02 --> Verify User password is filled
-17:34:23.101 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-03 --> Verify User is able to login with valid email and password
-17:34:29.291 [main] INFO  tc_Tr.DataProviderLogIn_Tr - Login Successful → Logging out now
-17:34:32.743 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-01 --> Verify User email is filled 
-17:34:36.321 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-02 --> Verify User password is filled
-17:34:39.568 [main] INFO  tc_Tr.DataProviderLogIn_Tr - TC-03 --> Verify User is able to login with valid email and password
-17:34:45.739 [main] INFO  tc_Tr.DataProviderLogIn_Tr - Login Successful → Logging out now
-17:38:09.332 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\INX\OneDrive\Documents\My Automation Learning\TourWitDemo\testng.xml
-
-17:38:09.644 [main] INFO  tc_Tr.DataProviderUtility_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
-17:38:15.310 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-01 --> Verify User email is filled
-17:38:18.660 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-02 --> Verify User password is filled
-17:38:21.964 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-03 --> Verify User is logged in by entering valid email and password
-17:38:35.455 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-01 --> Verify User email is filled
-17:38:38.952 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-02 --> Verify User password is filled
-17:38:42.174 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-03 --> Verify User is logged in by entering valid email and password
-17:38:55.746 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-01 --> Verify User email is filled
-17:38:59.269 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-02 --> Verify User password is filled
-17:39:02.488 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-03 --> Verify User is logged in by entering valid email and password
-17:39:12.189 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-01 --> Verify User email is filled
-17:39:15.711 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-02 --> Verify User password is filled
-17:39:18.981 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-03 --> Verify User is logged in by entering valid email and password
-17:39:32.389 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-01 --> Verify User email is filled
-17:39:35.854 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-02 --> Verify User password is filled
-17:39:39.079 [main] INFO  tc_Tr.DataProviderUtility_Tr - TC-03 --> Verify User is logged in by entering valid email and password
+17:45:33.212 [main] INFO  tc_Tr.EditAddress_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
+17:45:38.124 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add email
+17:45:41.517 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add password
+17:45:44.777 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to login by clicking on Login Button
+17:45:51.002 [main] INFO  tc_Tr.EditAddress_Tr - TC-01 --> Verify options are dispalying by clicking on profile icon
+17:45:55.071 [main] INFO  tc_Tr.EditAddress_Tr - TC-02 --> Verify profile screen is displaying by clicking edit profile
+17:46:00.356 [main] INFO  tc_Tr.EditAddress_Tr - TC-04 --> Verify subscription popup if it appears
+17:46:00.357 [main] INFO  tc_Tr.EditAddress_Tr - TC-07 --> Verify Address screen is displaying by clicking saved address
+17:46:05.609 [main] INFO  tc_Tr.EditAddress_Tr - TC-08 --> Verify user is able to change country and select country from the list
+17:46:13.743 [main] INFO  tc_Tr.EditAddress_Tr - Checking if subscription popup appears
+17:46:21.143 [main] INFO  tc_Tr.EditAddress_Tr - Subscription popup appeared – closing it
+17:46:24.300 [main] INFO  tc_Tr.EditAddress_Tr - TC-09 --> Verify User is able to change and select state from the list 
+17:46:29.564 [main] INFO  tc_Tr.EditAddress_Tr - TC-10 --> Verify User is able to change city and select city from the list
+17:46:34.759 [main] INFO  tc_Tr.EditAddress_Tr - TC-11 --> Verify User is able to change first name
+17:46:38.155 [main] INFO  tc_Tr.EditAddress_Tr - TC-12 --> Verify User is able to change last name
+17:46:41.567 [main] INFO  tc_Tr.EditAddress_Tr - TC-13 --> Verify User is able to change phone
+17:46:44.949 [main] INFO  tc_Tr.EditAddress_Tr - TC-14 --> Verify User is able to change email address
+17:46:48.461 [main] INFO  tc_Tr.EditAddress_Tr - TC-15 --> Verify User is able to change address
+17:46:52.038 [main] INFO  tc_Tr.EditAddress_Tr - TC-16 --> Verify User is able to change zip code
+17:46:55.371 [main] INFO  tc_Tr.EditAddress_Tr - TC-17 --> Verify change details are getting saved or not
+17:47:01.336 [main] INFO  tc_Tr.EditAddress_Tr - TC-18 --> Verify user is able to set specific address as default
+17:47:03.911 [main] INFO  tc_Tr.EditAddress_Tr - TC-19 --> Verify success message toast is displaying or not after set default address

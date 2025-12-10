@@ -1,8 +1,10 @@
 package tc_Tr;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,6 +21,25 @@ public class EditAddress_Tr extends BaseClassTr {
 		
 		Thread.sleep(3000);
 	}
+	
+	public void closeSubscriptionPopupIfPresent() {
+	    try {
+	        List<WebElement> closeBtns = driver.findElements(
+	                By.xpath("//button[@aria-label='Close popup']"));
+
+	        if (!closeBtns.isEmpty()) {
+	            logger.info("Subscription popup appeared → closing");
+
+	            closeBtns.get(0).click();
+
+	            new WebDriverWait(driver, Duration.ofSeconds(5))
+	                    .until(ExpectedConditions.invisibilityOf(closeBtns.get(0)));
+	        }
+	    } catch (Exception e) {
+	        // intentionally ignored
+	    }
+	}
+
 	
 	
 	@Test
@@ -56,7 +77,7 @@ public class EditAddress_Tr extends BaseClassTr {
 		
 	}
   		
-	//@Test(priority=2)
+	@Test(priority=2)
 	void changeAddress() throws InterruptedException {
 		
 		 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
@@ -73,13 +94,9 @@ public class EditAddress_Tr extends BaseClassTr {
 		 address.myProfile();
 		 
 		 Thread.sleep(5000);
-      	 logger.info("Tc -04 Verify User is able to enter name and email address in subscription popup ");
-      	 
-      	 logger.info("TC- 05 --> Verify User is able to select terms and conditions checkbox");
-      	 
-      	 logger.info("TC-06--> Verify User is able to subscribe news letter by clicking submit button");
-      	 login.subscribeNewsLater("Will John", "user23@yopmail.com");
-      	 
+		 
+		 logger.info("TC-04 --> Verify subscription popup if it appears");
+ 
 		 logger.info("TC-07 --> Verify Address screen is displaying by clicking saved address");
 		 Thread.sleep(5000);
 		 address.clickAddress();
@@ -94,6 +111,28 @@ public class EditAddress_Tr extends BaseClassTr {
      	 countrySelect.click();
      	 threadTime();
    	    
+     	logger.info("Checking if subscription popup appears");
+
+     // short, non-blocking wait
+     WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+     try {
+         WebElement closePopup = shortWait.until(
+                 ExpectedConditions.elementToBeClickable(
+                         By.xpath("//button[@aria-label='Close popup']")));
+
+         logger.info("Subscription popup appeared – closing it");
+         closePopup.click();
+
+         shortWait.until(ExpectedConditions.invisibilityOf(closePopup));
+
+     } catch (TimeoutException e) {
+         logger.info("Subscription popup did not appear – continuing test");
+     }
+
+
+      	 
+		 threadTime();
    	     logger.info("TC-09 --> Verify User is able to change and select state from the list ");
    	    
    	     WebElement stateList = wait.until(ExpectedConditions.elementToBeClickable(By.id("react-select-lazy-stateId-input")));
@@ -165,7 +204,7 @@ public class EditAddress_Tr extends BaseClassTr {
 	}
 	
 	
-	@Test(priority=3,dependsOnMethods= {"logInDetails"})
+	//@Test(priority=3,dependsOnMethods= {"logInDetails"})
 	void addAddress() throws InterruptedException {
 		
 		 
@@ -193,18 +232,16 @@ public class EditAddress_Tr extends BaseClassTr {
 		 Thread.sleep(3000);
 		 
 		 logger.info("TC-07 --> Verify user is able to select country from the country dropdown");
-		// CLICK DROPDOWN
+		
 		 WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(
 		         By.xpath("//div[@id='react-select-lazy-countryId-placeholder']/parent::div")));
 		 dropdown.click();
 		 Thread.sleep(500);
 
-		 // TYPE USING ACTIVE ELEMENT (React sets focus automatically)
 		 WebElement activeInput = driver.switchTo().activeElement();
 		 activeInput.sendKeys("Canada");
 		 Thread.sleep(1000);
 
-		 // SELECT OPTION
 		 WebElement option = wait.until(ExpectedConditions.elementToBeClickable(
 		         By.xpath("//div[@role='option' and contains(.,'Canada')]") ));
 		 option.click();

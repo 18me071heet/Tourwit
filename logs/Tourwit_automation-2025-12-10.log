@@ -1,0 +1,51 @@
+10:55:58.820 [main] INFO  tc_Tr.EditAddress_Tr - TC-01 --> Verify options are dispalying by clicking on profile icon
+10:56:02.899 [main] INFO  tc_Tr.EditAddress_Tr - TC-02 --> Verify profile screen is displaying by clicking edit profile
+10:56:03.109 [main] INFO  tc_Tr.EditAddress_Tr - TC-07 --> Verify Address screen is displaying by clicking saved address
+10:56:08.300 [main] INFO  tc_Tr.EditAddress_Tr - TC-08 --> Verify user is able to change country and select country from the list
+10:56:16.612 [main] INFO  tc_Tr.EditAddress_Tr - TC-09 --> Verify User is able to change and select state from the list 
+10:56:22.024 [main] INFO  tc_Tr.EditAddress_Tr - TC-10 --> Verify User is able to change city and select city from the list
+10:56:27.536 [main] INFO  tc_Tr.EditAddress_Tr - TC-11 --> Verify User is able to change first name
+11:00:22.489 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\INX\OneDrive\Documents\My Automation Learning\TourWitDemo\testng.xml
+
+11:00:22.836 [main] INFO  tc_Tr.EditAddress_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
+11:00:26.559 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add email
+11:00:29.766 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add password
+11:00:32.935 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to login by clicking on Login Button
+11:00:39.150 [main] INFO  tc_Tr.EditAddress_Tr - TC-01 --> Verify options are dispalying by clicking on profile icon
+11:00:43.214 [main] INFO  tc_Tr.EditAddress_Tr - TC-02 --> Verify profile screen is displaying by clicking edit profile
+11:00:48.423 [main] INFO  tc_Tr.EditAddress_Tr - TC-04 --> Verify subscription popup if it appears
+11:00:58.449 [main] INFO  tc_Tr.EditAddress_Tr - Subscription popup not displayed – skipping
+11:00:58.449 [main] INFO  tc_Tr.EditAddress_Tr - TC-07 --> Verify Address screen is displaying by clicking saved address
+11:01:03.586 [main] INFO  tc_Tr.EditAddress_Tr - TC-08 --> Verify user is able to change country and select country from the list
+11:01:11.171 [main] INFO  tc_Tr.EditAddress_Tr - TC-09 --> Verify User is able to change and select state from the list 
+11:04:15.804 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\INX\OneDrive\Documents\My Automation Learning\TourWitDemo\testng.xml
+
+11:04:16.096 [main] INFO  tc_Tr.EditAddress_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
+11:04:20.329 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add email
+11:04:23.624 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add password
+11:04:26.754 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to login by clicking on Login Button
+11:04:32.952 [main] INFO  tc_Tr.EditAddress_Tr - TC-01 --> Verify options are dispalying by clicking on profile icon
+11:04:37.028 [main] INFO  tc_Tr.EditAddress_Tr - TC-02 --> Verify profile screen is displaying by clicking edit profile
+11:04:42.187 [main] INFO  tc_Tr.EditAddress_Tr - TC-04 --> Verify subscription popup if it appears
+11:04:52.221 [main] INFO  tc_Tr.EditAddress_Tr - TC-07 --> Verify Address screen is displaying by clicking saved address
+11:04:57.348 [main] INFO  tc_Tr.EditAddress_Tr - TC-08 --> Verify user is able to change country and select country from the list
+11:05:05.632 [main] INFO  tc_Tr.EditAddress_Tr - Subscription popup not displayed – skipping
+11:05:08.648 [main] INFO  tc_Tr.EditAddress_Tr - TC-09 --> Verify User is able to change and select state from the list 
+11:20:24.657 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\INX\OneDrive\Documents\My Automation Learning\TourWitDemo\testng.xml
+
+11:20:24.988 [main] INFO  tc_Tr.EditAddress_Tr - >>> @BeforeClass executed, initializing driver with browser: chrome
+11:20:28.848 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add email
+11:20:32.086 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to add password
+11:20:35.350 [main] INFO  tc_Tr.EditAddress_Tr - Verify User is able to login by clicking on Login Button
+11:20:41.544 [main] INFO  tc_Tr.EditAddress_Tr - TC-01 --> Verify options are dispalying by clicking on profile icon
+11:20:45.609 [main] INFO  tc_Tr.EditAddress_Tr - TC-02 --> Verify profile screen is displaying by clicking edit profile
+11:20:50.743 [main] INFO  tc_Tr.EditAddress_Tr - TC-04 --> Verify subscription popup if it appears
+11:20:50.743 [main] INFO  tc_Tr.EditAddress_Tr - TC-07 --> Verify Address screen is displaying by clicking saved address
+11:20:55.846 [main] INFO  tc_Tr.EditAddress_Tr - TC-08 --> Verify user is able to change country and select country from the list
+11:21:03.536 [main] INFO  tc_Tr.EditAddress_Tr - Checking if subscription popup appears
+11:21:11.011 [main] INFO  tc_Tr.EditAddress_Tr - Subscription popup appeared – closing it
+11:21:14.109 [main] INFO  tc_Tr.EditAddress_Tr - TC-09 --> Verify User is able to change and select state from the list 
+11:21:19.205 [main] INFO  tc_Tr.EditAddress_Tr - TC-10 --> Verify User is able to change city and select city from the list

@@ -209,7 +209,7 @@ import pageObjectTr.Login_TR;
 	    	
 	    }	
 	    
-	    @Test(priority=5,dependsOnMethods= {"logInDetails"})
+	   // @Test(priority=5,dependsOnMethods= {"logInDetails"})
 	    void searchNdComment() throws InterruptedException {
 	    	
 	    	   Forums_TR createForums = new Forums_TR(driver);
@@ -318,7 +318,7 @@ import pageObjectTr.Login_TR;
 	    	
 	    }	
 	     
-       //@Test(priority=7,dependsOnMethods= {"logInDetails"})
+         @Test(priority=7,dependsOnMethods= {"logInDetails"})
 	     void followCategory() {
 	    	 
 	    	 Forums_TR createForums = new Forums_TR(driver);
@@ -330,9 +330,9 @@ import pageObjectTr.Login_TR;
 	    	   Thread.sleep(3000);
 	    	   createForums.forumNavigation(driver);
 	    	   
-	    	   Thread.sleep(3000);
+	    	 /*  Thread.sleep(3000);
 	    	 	WebElement closeSubs = driver.findElement(By.xpath(" //button[@aria-label='Close popup']//*[name()='svg']"));
-	   			closeSubs.click();
+	   			closeSubs.click();  */
 	   			
 	   			Thread.sleep(3000);
 	   			
@@ -342,7 +342,7 @@ import pageObjectTr.Login_TR;
 	    	   
 	    	   logger.info("TC-04 --> Verify more fourms categories are displaying by clicking Load more button");
 	    	   
-	    	   createForums.followCategory("TravelForum");
+	    	   createForums.followCategory("My Food");
 	    	   
 	    	   }
 	    	 
@@ -355,7 +355,7 @@ import pageObjectTr.Login_TR;
 	     }
 	     
 	     
-	 // @Test(priority=9,dependsOnMethods= {"logInDetails"})
+	     @Test(priority=9,dependsOnMethods= {"logInDetails"})
 	     void categoryFilter() {
 	    	 
              Forums_TR createForums = new Forums_TR(driver);
@@ -367,9 +367,9 @@ import pageObjectTr.Login_TR;
 	    		 		
 	    		 createForums.forumNavigation(driver);
 	    		
-	    		 Thread.sleep(3000);
+	    		/* Thread.sleep(3000);
 		    	 WebElement closeSubs = driver.findElement(By.xpath(" //button[@aria-label='Close popup']//*[name()='svg']"));
-		   		 closeSubs.click();
+		   		 closeSubs.click(); */
 		   			
 		   		 Thread.sleep(3000);
 	    		 
@@ -394,7 +394,7 @@ import pageObjectTr.Login_TR;
 	    	 }	    	 
 	     }
 	     
-	  // @Test(priority=10,dependsOnMethods= {"logInDetails"})
+	     @Test(priority=10,dependsOnMethods= {"logInDetails"})
 	     void sortestFilter() {
 	    	 
 	    	 Forums_TR createForums = new Forums_TR(driver);
@@ -437,9 +437,9 @@ import pageObjectTr.Login_TR;
 	    		    logger.info("TC-01 --> Verify User is navigate to the forum page by clicking on Forum ");
 			        createForums.forumNavigation(driver);
 			    
-			  	    Thread.sleep(3000);
+			  	/*    Thread.sleep(3000);
 		    	 	WebElement closeSubs = driver.findElement(By.xpath(" //button[@aria-label='Close popup']//*[name()='svg']"));
-		   			closeSubs.click();
+		   			closeSubs.click(); */
 		   			
 		   			Thread.sleep(3000);
 		   			
@@ -474,7 +474,7 @@ import pageObjectTr.Login_TR;
 }    	   
 	     }
 	     
-	    // @Test(priority=12,dependsOnMethods= {"logInDetails"})
+	    @Test(priority=12,dependsOnMethods= {"logInDetails"})
 	     void blockUser() throws InterruptedException {
 	    	 
 	    	 Forums_TR createForums = new Forums_TR(driver);
